@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+body {
+    background-color: #13baba;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+body {
+            background-color: #13baba;
+        }
+        .navbar {
+            background-color: #29b1b1;
+        }
+        .navbar-brand, .nav-link {
+            color: white !important;
+        }
+        .nav-link:hover {
+            color: rgb(13, 12, 12) !important;
+        }
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.box {
+    width: 100%;
+    padding: 15px;
+    color: black;
+    text-align: center;
+}
+
+#bobzi {
+    font-size: 2rem;
+    text-align: center;
+}
+
+#icon i {
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+/* Portfolio Section */
+.portfolio-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.portfolio-box {
+    width: 100%;
+    max-width: 300px;
+    margin: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.portfolio-box img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.button-container {
+    text-align: center;
+    justify-content: center;
+}
+
+.beautiful-button {
+    background: linear-gradient(45deg, #ff6b6b, #f06595);
+    border: none;
+    border-radius: 50px;
+    color: rgb(255, 255, 255);
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    margin-top: 20PX;
+    margin-right: 80px;
+}
+
+.beautiful-button:hover {
+    background: linear-gradient(45deg, #f06595, #ff6b6b);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+    transform: translateY(-3px);
+}
+
+.beautiful-button:active {
+    transform: translateY(-1px);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+.h1{
+    color: white;
+    text-align: center;
+    margin-top: 120px;
+}
+.view-button {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    background-color: white;
+    color: rgb(206, 13, 174);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.view-button:hover {
+    background-color: black;
+}
+
+/* Contact Form */
+.form {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#id {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 15px;
+    padding-left: 10px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+.massage {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid white;
+    background-color: #13baba;
+}
+
+/* Footer */
+.new-footer {
+    background-color: #29b1b1;
+    color: #ffffff;
+    padding: 40px 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer-section {
+    width: 100%;
+    max-width: 300px;
+    margin: 10px;
+}
+
+.footer-bottom {
+    padding: 15px 0;
+    font-size: 14px;
+    color: #141212;
+}
+#b{
+    color:white;
+}
+#element{
+    color:white;
+}
+/* Media Queries */
+@media (max-width: 768px) {
+    .ul {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .row {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .box {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .portfolio-container {
+        flex-direction: column;
+    }
+
+    .portfolio-box {
+        max-width: 90%;
+    }
+
+    .view-button {
+        font-size: 12px;
+        padding: 8px 15px;
+    }
+
+    #bobzi {
+        font-size: 1.5rem;
+    }
+
+    .logo a {
+        font-size: 1.2rem;
+    }
+
+    .beautiful-button {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+}
+.portfolio-box button a{
+      text-decoration: none;
+      color: rgb(206, 13, 174);;
+}
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="/">Shoaib's Portfolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="http://127.0.0.1:5501/portfolio.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="http://127.0.0.1:5501/portfolio.html">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="http://127.0.0.1:5501/portfolio.html">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="http://127.0.0.1:5501/baroque/my%20portfolio/form.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    </div>
+
+    <div class="portfolio-container">
+        <div class="portfolio-box">
+          <img src="https://i.pinimg.com/564x/cf/a3/3d/cfa33d32d9edb1443442d70c544153f8.jpg" alt="Project 1">
+          <button class="view-button"><a href="https://www.forbes.com/advisor/investing/how-to-choose-a-financial-advisor/">view project</a></button>
+        </div>
+        <div class="portfolio-box">
+          <img src="https://i.pinimg.com/564x/d4/62/06/d4620675d5a777905be9bac6478d4ae9.jpg" alt="project 2">
+          <button class="view-button"><a href="https://www.starofservice.pk/dir/punjab/lahore/lahore/roofing">view project</a></button>
+        </div>
+      </div>
+      <div class="portfolio-container">
+        <div class="portfolio-box">
+          <img src="https://i.pinimg.com/564x/12/50/2f/12502fd7c9d1121c2df46b3209d9a853.jpg" alt="Project 1">
+        <button class="view-button"><a href="https://www.bls.gov/ooh/computer-and-information-technology/web-developers.htm">view project</a></button>
+        </div>
+        <div class="portfolio-box">
+          <img src="https://i.pinimg.com/564x/ed/61/74/ed6174f0d06350aeda6746f2b9d8ea7f.jpg">
+          <button class="view-button"><a href="https://www.shaadi.org.pk/">view project</a></button>
+        </div>
+        </div>
+      </div>
+      <div>
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+              <img src="https://i.pinimg.com/enabled_hi/564x/68/57/30/6857300504ec153030c0b9fefda90ce8.jpg" alt="Project 1">
+              <button class="view-button"><a href="https://www.simplilearn.com/how-to-become-content-writer-article">view projects</a></button>
+            </div>
+            <div class="portfolio-box">
+              <img src="https://i.pinimg.com/enabled_hi/564x/b4/4c/a5/b44ca5beba7b7418c794ff72699e5e81.jpg" alt="project 2">
+              <button class="view-button"><a href="https://www.investopedia.com/terms/p/portfolio.asp">View Project</a></button>
+            </div>
+          </div>
+          <div class="portfolio-container">
+            <div class="portfolio-box">
+              <img src="https://i.pinimg.com/enabled_hi/564x/df/7d/2b/df7d2b8276f2dd979936b399af24a4a7.jpg" alt="Project 1">
+            <button class="view-button"><a href="https://qutor.com/">view project</a></button>
+            </div>
+            <div class="portfolio-box">
+              <img src="https://i.pinimg.com/enabled_hi/564x/70/43/9e/70439e0d9912989465e8120aa8692fa6.jpg">
+              <button class="view-button"><a href="https://digitalmarketinginstitute.com/blog/what-skills-do-i-need-to-be-a-social-media-manager">view project</a></button>
+            </div>
+            </div>
+          </div>
+          <div>
+        <hr class="hr">
+      <footer class="new-footer">
+        <div class="footer-content">
+          <div class="footer-section about">
+            <h3>Shoaib's Portfolio</h3>
+            <p>Crafting beautiful websites <br>with modern web technologies.</p>
+          </div>
+          <div class="footer-section contact">
+            <h3>for more info</h3>
+            <p>Email: shoaib-coding-vala@gmail.com</p>
+            <p>Phone: +92 3460206227</p>
+          </div>
+          <div class="footer-section contact">
+            <h3>Contact Me</h3>
+            <p>Email: shoaib-coding-vala@gmail.com</p>
+            <p>Phone: +92 3460206227</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 Shoaib's Portfolio | All Rights Reserved</p>
+        </div>
+      </footer>
+      
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        function toggleSidebar() {
+            const sidebar = document.getElementsByClassName("navbar navbar-expand-lg navbar-light");
+            if (sidebar.style.left === "0px") {
+                sidebar.style.left = "-250px"; 
+            } else {
+                sidebar.style.left = "0";
+            }
+        }
+      </script>
+</body>
+</html>
